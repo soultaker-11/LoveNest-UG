@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LoveNest UG</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Firebase -->
+
+  <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>💋 LoveNest UG</h1>
+    <!-- Logo -->
+    <img src="assets/logo.svg" alt="LoveNest UG Logo" width="120">
 
+    <!-- Sign-up Section -->
     <div id="signup-section">
       <input type="text" id="emailPhone" placeholder="Email or Phone">
       <input type="text" id="username" placeholder="Username (auto-gen optional)">
@@ -22,15 +25,35 @@
       <button onclick="signup()">Sign Up</button>
     </div>
 
-    <div id="chat-section" class="hidden">
+    <!-- Chat Selection -->
+    <div id="chat-selection" class="hidden">
+      <button onclick="showRandomChat()">Random Chat</button>
+      <button onclick="showVerifiedChat()">Verified 20+ Chat</button>
+      <button onclick="showMatchScreen()">Swipe Matches</button>
+    </div>
+
+    <!-- Random Chat -->
+    <div id="random-chat" class="hidden chat-section">
       <h2>Random Chat</h2>
-      <div id="chatroom"></div>
-      <input type="text" id="message" placeholder="Type your message">
-      <button onclick="sendMessage()">Send</button>
+      <div id="random-chatroom"></div>
+      <input type="text" id="random-message" placeholder="Type your message">
+      <button onclick="sendRandomMessage()">Send</button>
+    </div>
+
+    <!-- Verified Chat -->
+    <div id="verified-chat" class="hidden chat-section">
+      <h2>Verified 20+ Chat</h2>
+      <div id="verified-chatroom"></div>
+      <input type="text" id="verified-message" placeholder="Type your message">
+      <button onclick="sendVerifiedMessage()">Send</button>
+    </div>
+
+    <!-- Swipe Matching -->
+    <div id="match-screen" class="hidden chat-section">
+      <h2>Swipe Matches</h2>
+      <div id="swipe-container"></div>
     </div>
   </div>
 
-  <script src="firebase-config.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+  <!-- Firebase Config + App JS -->
+  <script src="firebase-config.js"></script
