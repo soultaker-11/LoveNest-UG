@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "623664670028",
+    "project_id": "love-nest-ug",
+    "storage_bucket": "love-nest-ug.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623664670028:android:80a366d65edd31952e5be9",
+        "android_client_info": {
+          "package_name": "com.soutaker.lovenestug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxwEgwCQE9A5hjc50lUWbfI7Us6CvCkRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
